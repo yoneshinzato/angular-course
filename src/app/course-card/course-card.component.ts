@@ -41,5 +41,9 @@ export class CourseCardComponent implements OnInit {
     this.courseSelected.emit(this.course)
   }
 
+  cardStyles() {
+    return { 'text-decoration': 'underline' }
+  }
+
 
 }
