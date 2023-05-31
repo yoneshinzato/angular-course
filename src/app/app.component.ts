@@ -11,6 +11,16 @@ export class AppComponent {
 
   courses = COURSES;
 
+  startDate = new Date(2000, 0, 1)
+
+  price = 9.99
+
+  rate = 0.67
+
+  title = COURSES[0].description
+
+  course = COURSES[0]
+
 
   onCourseSelected(course: Course) {
     console.log("app component event bubbled", course)
