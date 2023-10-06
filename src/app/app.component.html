@@ -1,15 +1,44 @@
 <div class="top-menu">
-
     <img class="logo"
          src="https://angular-academy.s3.amazonaws.com/main-logo/main-page-logo-small-hat.png">
 
 </div>
 
+<!-- {{ courses | json}} -->
+
+<!-- <div *ngFor="let pair of course | keyvalue">
+    {{ pair.key + ": " + pair.value}}
+</div>
+
+<div class="demo">
+    <div>
+        Start Date: {{ startDate | date: 'MMM dd yyyy' }}
+    </div>
+
+    <div>
+        {{ rate | percent }}
+    </div>
+</div> -->
 
 <div class="courses">
+<<<<<<< HEAD
   <course-card [course]="coreCourse"></course-card>
   <course-card [course]="rxjsCourse"></course-card>
   <course-card [course]="ngrxCourse"></course-card>
+=======
+
+    <course-card 
+        (courseSelected)="onCourseSelected($event)"
+        [course]="courses[0]"
+    ></course-card>
+    <course-card 
+        (courseSelected)="onCourseSelected($event)"
+        [course]="courses[1]"
+    ></course-card>
+
+ 
+
+>>>>>>> d0c2886d393d7573810bd9332ffa4b9424bb53b1
 </div>
 
 
